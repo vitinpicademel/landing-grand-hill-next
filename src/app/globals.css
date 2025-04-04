@@ -681,28 +681,28 @@ h1, h2, h3 {
 
 /* Localização Section */
 .localizacao-section {
-  background-color: var(--light-color);
+  padding: 6rem 0;
+  background-color: var(--elegant-bg);
+  position: relative;
 }
 
-.localizacao-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, rgba(196, 167, 125, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: -1;
+.localizacao-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 4rem;
 }
 
 .localizacao-content {
   display: flex;
   gap: 3rem;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .mapa-container {
   flex: 1;
+  max-width: 600px;
 }
 
 .mapa-img {
@@ -712,67 +712,42 @@ h1, h2, h3 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.localizacao-info {
-  flex: 1;
+.endereco-card {
+  flex: 0 1 400px;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.localizacao-info h3 {
+.endereco-card h3 {
   font-size: 1.5rem;
+  color: var(--primary-color);
   margin-bottom: 1.5rem;
-  color: var(--primary-color);
 }
 
-.localizacao-info p {
+.endereco-card p {
+  color: var(--text-color);
   margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  line-height: 1.6;
 }
 
-.pontos-interesse {
-  margin-top: 2rem;
-}
-
-.pontos-interesse h4 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.pontos-interesse ul {
-  list-style: none;
-}
-
-.pontos-interesse li {
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.pontos-interesse i {
+.endereco-card i {
   color: var(--secondary-color);
+  margin-right: 0.5rem;
 }
 
 /* Contato Section */
 .contato-section {
-  background-color: var(--gray-color);
+  padding: 6rem 0;
+  background-color: var(--primary-color);
   position: relative;
-  overflow: hidden;
-}
-
-.contato-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, rgba(196, 167, 125, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: -1;
 }
 
 .contato-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--light-color);
   margin-bottom: 2rem;
 }
 
@@ -780,71 +755,91 @@ h1, h2, h3 {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3rem;
+  border-radius: 15px;
 }
 
-.contato-content p {
+.contato-content h3 {
+  color: var(--light-color);
+  font-size: 1.5rem;
   margin-bottom: 2rem;
-  font-size: 1.1rem;
 }
 
-.contato-info {
+.contato-cards {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }
 
-.info-item {
+.contato-card {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  color: var(--light-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  padding: 1.5rem;
-  background: var(--light-color);
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  min-width: 200px;
 }
 
-.info-item:hover {
-  transform: translateY(-5px);
-}
-
-.info-item:nth-child(2) {
-  transform: translateY(-10px);
-}
-
-.info-item i {
-  font-size: 2rem;
+.contato-card i {
+  font-size: 1.5rem;
   color: var(--secondary-color);
 }
 
-.info-item p {
+.contato-card p {
   margin: 0;
-  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .whatsapp-button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #25d366;
+  background-color: #25D366;
   color: var(--light-color);
   text-decoration: none;
   padding: 1rem 2rem;
-  border-radius: 5px;
+  border-radius: 25px;
+  font-weight: 500;
   transition: all 0.3s ease;
-  font-weight: 600;
-  margin-top: 2rem;
+}
+
+.whatsapp-button:hover {
+  background-color: #20bd5a;
+  transform: translateY(-2px);
 }
 
 .whatsapp-button i {
   font-size: 1.2rem;
 }
 
-.whatsapp-button:hover {
-  background-color: #128c7e;
-  transform: translateY(-2px);
+@media (max-width: 768px) {
+  .localizacao-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .endereco-card {
+    width: 100%;
+  }
+
+  .contato-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contato-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contato-content {
+    padding: 2rem 1rem;
+  }
 }
 
 /* Footer */

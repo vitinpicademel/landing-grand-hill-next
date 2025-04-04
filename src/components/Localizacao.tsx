@@ -8,7 +8,7 @@ export default function Localizacao() {
       <div className="container">
         <div className="separator-large fade-in">
           <span className="separator-line-large"></span>
-          <i className="fas fa-square-full"></i>
+          <span className="separator-diamond">♦</span>
           <span className="separator-line-large"></span>
         </div>
         <h2>Localização Privilegiada</h2>
@@ -22,15 +22,13 @@ export default function Localizacao() {
               className="mapa-img"
             />
           </div>
-          <div className="localizacao-info">
+          <div className="endereco-card">
             <h3>Endereço</h3>
             <p>
               <i className="fas fa-map-marker-alt"></i> Rifaina - SP
             </p>
             <p>
-              Localizado às margens da represa Jaguara, próximo à ponte do Rio Grande, que faz divisa entre os
-              estados de São Paulo e Minas Gerais, está inserido na área de turismo e lazer, e possui vista para
-              o município de Rifaina-SP.
+              Localizado às margens da represa Jaguara, próximo à ponte do Rio Grande, que faz divisa entre os estados de São Paulo e Minas Gerais, está inserido na área de turismo e lazer, e possui vista para o município de Rifaina-SP.
             </p>
           </div>
         </div>

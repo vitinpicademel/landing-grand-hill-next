@@ -8,27 +8,24 @@ export default function Contato() {
       <div className="container">
         <div className="separator-large fade-in">
           <span className="separator-line-large"></span>
-          <i className="fas fa-square-full"></i>
+          <span className="separator-diamond">♦</span>
           <span className="separator-line-large"></span>
         </div>
         <h2>Entre em Contato</h2>
         <div className="contato-content">
-          <p>
-            Estamos à disposição para esclarecer todas as suas dúvidas sobre o Grand Hill. Entre em contato
-            conosco através dos canais abaixo:
-          </p>
-          <div className="contato-info">
-            <div className="info-item">
+          <h3>Quer saber mais sobre o Grand Hill?</h3>
+          <div className="contato-cards">
+            <div className="contato-card">
               <i className="fas fa-phone"></i>
-              <p>(34) 3336-1900</p>
+              <p>34 3336-1900</p>
             </div>
-            <div className="info-item">
+            <div className="contato-card">
               <i className="fas fa-envelope"></i>
-              <p>contato@grandhill.com.br</p>
+              <p>vendas@biomarenegocios.com.br</p>
             </div>
-            <div className="info-item">
-              <i className="fas fa-map-marker-alt"></i>
-              <p>Rifaina - SP</p>
+            <div className="contato-card">
+              <i className="fas fa-clock"></i>
+              <p>Seg a Sex 8h às 18h</p>
             </div>
           </div>
           <Link
