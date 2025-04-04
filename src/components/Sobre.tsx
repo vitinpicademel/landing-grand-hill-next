@@ -19,8 +19,9 @@ export default function Sobre() {
             Seu refúgio às margens<br />da represa Jaguara
           </h3>
           <p className="intro-description fade-in">
-            GRAND HILL, nome inspirado nas grandes colinas da nossa região. Empreendimento com conceito de
-            Residência e Resort, contempla toda comodidade e aconchego do lar e todos os itens de lazer de
+            GRAND HILL, nome inspirado nas grandes colinas da nossa região.
+            Empreendimento com conceito de Residência e Resort, contempla
+            toda comodidade e aconchego do lar e todos os itens de lazer de
             um clube.
           </p>
         </div>

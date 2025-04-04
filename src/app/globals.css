@@ -248,69 +248,102 @@ h1, h2, h3 {
 
 /* Sobre Section */
 .sobre-section {
-  background-color: var(--gray-color);
+  padding: 6rem 0;
+  background-color: var(--elegant-bg);
+  position: relative;
 }
 
 .intro-text {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 3rem;
-}
-
-.intro-text.fade-in {
+  margin: 0 auto 4rem;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.intro-text.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+  animation: fadeInUp 1s ease forwards;
 }
 
 .main-title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: var(--primary-color);
-}
-
-.main-title.fade-in,
-.subtitle-intro.fade-in,
-.intro-description.fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.main-title.fade-in.visible,
-.subtitle-intro.fade-in.visible,
-.intro-description.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.main-title.fade-in {
-  transition-delay: 0.2s;
+  animation: fadeInUp 1s ease forwards 0.2s;
 }
 
 .subtitle-intro {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  color: var(--secondary-color);
-}
-
-.subtitle-intro.fade-in {
-  transition-delay: 0.4s;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  color: var(--primary-color);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards 0.4s;
 }
 
 .intro-description {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
-  color: var(--dark-gray);
+  color: var(--text-color);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards 0.6s;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.intro-description.fade-in {
-  transition-delay: 0.6s;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards 0.3s;
+}
+
+.separator-line {
+  height: 1px;
+  width: 100px;
+  background-color: var(--secondary-color);
+}
+
+.separator i {
+  color: var(--secondary-color);
+  margin: 0 1rem;
+  font-size: 0.8rem;
+}
+
+.separator-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards 0.5s;
+}
+
+.separator-line-large {
+  height: 2px;
+  width: 200px;
+  background-color: var(--secondary-color);
+}
+
+.separator-large i {
+  color: var(--secondary-color);
+  margin: 0 2rem;
+  font-size: 1rem;
 }
 
 .sobre-content {
@@ -351,75 +384,69 @@ h1, h2, h3 {
 
 /* Diferenciais Section */
 .diferenciais-section {
-  background-color: var(--light-color);
-}
-
-.diferenciais-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, rgba(196, 167, 125, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: -1;
+  padding: 6rem 0;
+  background-color: var(--elegant-bg);
 }
 
 .diferenciais-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 3rem;
 }
 
 .diferencial-card {
-  background: var(--light-color);
-  padding: 2rem;
+  background: white;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .diferencial-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+}
+
+.diferencial-img-container {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
 .diferencial-img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 1.5rem;
+}
+
+.diferencial-content {
+  padding: 1.5rem;
 }
 
 .diferencial-card h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .diferencial-card p {
-  margin-bottom: 1.5rem;
-  color: var(--dark-gray);
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .detalhes-lista {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .detalhes-lista li {
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.detalhes-lista li:last-child {
-  margin-bottom: 0;
-}
-
-.detalhes-lista li i {
-  color: var(--secondary-color);
+  margin: 0.5rem 0;
+  color: var(--text-color);
 }
 
 /* Plantas Section */
@@ -784,62 +811,6 @@ h1, h2, h3 {
 .sobre-section::before,
 .diferencial-card:hover::before {
   animation: float 3s ease-in-out infinite;
-}
-
-/* Separators */
-.separator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem 0;
-}
-
-.separator.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.separator-line {
-  height: 1px;
-  width: 100px;
-  background-color: var(--secondary-color);
-}
-
-.separator i {
-  color: var(--secondary-color);
-  margin: 0 1rem;
-  font-size: 0.8rem;
-}
-
-.separator-large {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3rem 0;
-}
-
-.separator-large.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.separator-large.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.separator-line-large {
-  height: 2px;
-  width: 200px;
-  background-color: var(--secondary-color);
-}
-
-.separator-large i {
-  color: var(--secondary-color);
-  margin: 0 2rem;
-  font-size: 1rem;
 }
 
 /* Modal */
