@@ -215,16 +215,30 @@ h1, h2, h3 {
   justify-content: center;
   gap: 2.5rem;
   margin: 1rem 0;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .feature {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(196, 167, 125, 0.2);
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
   backdrop-filter: blur(5px);
+  border: 1px solid rgba(196, 167, 125, 0.3);
 }
 
 .feature-icon {
@@ -235,6 +249,8 @@ h1, h2, h3 {
 .feature span {
   font-size: 1.1rem;
   font-weight: 500;
+  color: var(--light-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero-buttons {
