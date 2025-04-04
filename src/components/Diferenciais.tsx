@@ -17,24 +17,13 @@ export default function Diferenciais() {
         <div className="diferenciais-grid">
           <div className="diferencial-card">
             <div className="diferencial-img-container">
-              <div style={{ position: 'relative', width: '100%', height: '200px' }}>
-                <Image
-                  src="/imagens/Book Grand Hill Ana Luisa_page-0003.jpg"
-                  alt="Acabamento Premium - Vista 1"
-                  layout="fill"
-                  objectFit="cover"
-                  className="diferencial-img"
-                />
-              </div>
-              <div style={{ position: 'relative', width: '100%', height: '200px', marginTop: '4px' }}>
-                <Image
-                  src="/imagens/Book Grand Hill Ana Luisa_page-0004.jpg"
-                  alt="Acabamento Premium - Vista 2"
-                  layout="fill"
-                  objectFit="cover"
-                  className="diferencial-img"
-                />
-              </div>
+              <Image
+                src="/imagens/acabamento-premium.jpg"
+                alt="Acabamento Premium"
+                width={400}
+                height={300}
+                className="diferencial-img"
+              />
             </div>
             <div className="diferencial-content">
               <h3>Acabamento<br />Premium</h3>
@@ -50,10 +39,10 @@ export default function Diferenciais() {
           <div className="diferencial-card">
             <div className="diferencial-img-container">
               <Image
-                src="/imagens/Book Grand Hill Ana Luisa_page-0005.jpg"
+                src="/imagens/seguranca.jpg"
                 alt="Segurança 24h"
                 width={400}
-                height={400}
+                height={300}
                 className="diferencial-img"
               />
             </div>
@@ -71,10 +60,10 @@ export default function Diferenciais() {
           <div className="diferencial-card">
             <div className="diferencial-img-container">
               <Image
-                src="/imagens/Book Grand Hill Ana Luisa_page-0006.jpg"
+                src="/imagens/lazer.jpg"
                 alt="Área de Lazer"
                 width={400}
-                height={400}
+                height={300}
                 className="diferencial-img"
               />
             </div>
@@ -88,6 +77,12 @@ export default function Diferenciais() {
               </ul>
             </div>
           </div>
+        </div>
+
+        <div className="separator bottom-separator">
+          <span className="line"></span>
+          <span className="diamond">♦</span>
+          <span className="line"></span>
         </div>
       </div>
     </section>

@@ -435,6 +435,7 @@ h1, h2, h3 {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .diferencial-card {
@@ -453,7 +454,9 @@ h1, h2, h3 {
 
 .diferencial-img-container {
   width: 100%;
+  height: 300px;
   overflow: hidden;
+  position: relative;
 }
 
 .diferencial-img {
@@ -495,6 +498,8 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  border-top: 1px solid var(--secondary-color);
+  padding-top: 1.5rem;
 }
 
 .detalhes-lista li {
@@ -508,6 +513,11 @@ h1, h2, h3 {
   justify-content: center;
   gap: 1.5rem;
   margin-bottom: 3rem;
+}
+
+.bottom-separator {
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .line {
