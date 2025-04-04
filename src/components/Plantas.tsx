@@ -14,10 +14,10 @@ export default function Plantas() {
       imagem: '/imagens/Book Grand Hill Ana Luisa_page-0033.jpg',
       descricao: 'Apartamento com sala e cozinha integradas, área gourmet, dormitório, banheiro e lavanderia.',
       specs: [
-        { icon: 'fas fa-bed', text: '1 Dormitório' },
-        { icon: 'fas fa-bath', text: '1 Banheiro' },
-        { icon: 'fas fa-utensils', text: 'Área Gourmet' },
-        { icon: 'fas fa-tshirt', text: 'Lavanderia' },
+        { icon: '🛏️', text: '1 Dormitório' },
+        { icon: '🚿', text: '1 Banheiro' },
+        { icon: '🍽️', text: 'Área Gourmet' },
+        { icon: '🧺', text: 'Lavanderia' },
       ],
     },
     {
@@ -27,11 +27,11 @@ export default function Plantas() {
       imagem: '/imagens/Book Grand Hill Ana Luisa_page-0034.jpg',
       descricao: 'Apartamento duplex com sala e cozinha integradas, área gourmet, lavanderia, suíte no pavimento superior e pé direito duplo.',
       specs: [
-        { icon: 'fas fa-bed', text: '1 Suíte' },
-        { icon: 'fas fa-bath', text: '2 Banheiros' },
-        { icon: 'fas fa-utensils', text: 'Área Gourmet' },
-        { icon: 'fas fa-tshirt', text: 'Lavanderia' },
-        { icon: 'fas fa-arrows-alt-v', text: 'Pé Direito Duplo' },
+        { icon: '🛏️', text: '1 Suíte' },
+        { icon: '🚿', text: '2 Banheiros' },
+        { icon: '🍽️', text: 'Área Gourmet' },
+        { icon: '🧺', text: 'Lavanderia' },
+        { icon: '↕️', text: 'Pé Direito Duplo' },
       ],
     },
     {
@@ -41,11 +41,11 @@ export default function Plantas() {
       imagem: '/imagens/Book Grand Hill Ana Luisa_page-0035.jpg',
       descricao: 'Apartamento com sala e cozinha integradas, área gourmet, lavanderia, 1 suíte, 1 dormitório e 2 banheiros, com hall de distribuição.',
       specs: [
-        { icon: 'fas fa-bed', text: '1 Suíte + 1 Dormitório' },
-        { icon: 'fas fa-bath', text: '2 Banheiros' },
-        { icon: 'fas fa-utensils', text: 'Área Gourmet' },
-        { icon: 'fas fa-tshirt', text: 'Lavanderia' },
-        { icon: 'fas fa-door-open', text: 'Hall' },
+        { icon: '🛏️', text: '1 Suíte + 1 Dormitório' },
+        { icon: '🚿', text: '2 Banheiros' },
+        { icon: '🍽️', text: 'Área Gourmet' },
+        { icon: '🧺', text: 'Lavanderia' },
+        { icon: '🚪', text: 'Hall' },
       ],
     },
     {
@@ -55,11 +55,11 @@ export default function Plantas() {
       imagem: '/imagens/Book Grand Hill Ana Luisa_page-0036.jpg',
       descricao: 'Apartamento com sala e cozinha integradas, área gourmet, lavanderia, 1 suíte, 1 dormitório e 2 banheiros, com hall de distribuição.',
       specs: [
-        { icon: 'fas fa-bed', text: '1 Suíte + 1 Dormitório' },
-        { icon: 'fas fa-bath', text: '2 Banheiros' },
-        { icon: 'fas fa-utensils', text: 'Área Gourmet' },
-        { icon: 'fas fa-tshirt', text: 'Lavanderia' },
-        { icon: 'fas fa-door-open', text: 'Hall' },
+        { icon: '🛏️', text: '1 Suíte + 1 Dormitório' },
+        { icon: '🚿', text: '2 Banheiros' },
+        { icon: '🍽️', text: 'Área Gourmet' },
+        { icon: '🧺', text: 'Lavanderia' },
+        { icon: '🚪', text: 'Hall' },
       ],
     },
     {
@@ -69,9 +69,9 @@ export default function Plantas() {
       imagem: '/imagens/Book Grand Hill Ana Luisa_page-0038.jpg',
       descricao: 'Apartamento duplex com pavimento inferior contendo 1 suíte e 2 dormitórios, copa, lavanderia e 3 banheiros. Pavimento superior com ampla área social, cozinha gourmet e SPA privativo. Pé direito duplo na área social.',
       specs: [
-        { icon: 'fas fa-bed', text: '1 Suíte + 2 Dormitórios' },
-        { icon: 'fas fa-bath', text: '3 Banheiros' },
-        { icon: 'fas fa-hot-tub', text: 'SPA' },
+        { icon: '🛏️', text: '1 Suíte + 2 Dormitórios' },
+        { icon: '🚿', text: '3 Banheiros' },
+        { icon: '🛁', text: 'SPA' },
       ],
     },
   ];
@@ -81,31 +81,37 @@ export default function Plantas() {
       <div className="container">
         <div className="separator-large fade-in">
           <span className="separator-line-large"></span>
-          <i className="fas fa-square-full"></i>
+          <span className="separator-diamond">♦</span>
           <span className="separator-line-large"></span>
         </div>
         <h2>Plantas</h2>
         <div className="plantas-grid">
           {plantas.map((planta) => (
             <div key={planta.id} className="planta-card" onClick={() => setSelectedImage(planta.imagem)}>
-              <Image
-                src={planta.imagem}
-                alt={planta.nome}
-                width={300}
-                height={200}
-                className="planta-img"
-              />
-              <p className="planta-texto">{planta.descricao}</p>
-              <div className="planta-descricao-box">
-                <h3>{planta.nome} - {planta.area}</h3>
+              <div className="planta-header">
+                <span className="planta-nome">{planta.nome}</span>
+                <span className="planta-area">{planta.area}</span>
+                <span className="orientacao">🧭</span>
+              </div>
+              <div className="planta-img-container">
+                <Image
+                  src={planta.imagem}
+                  alt={planta.nome}
+                  width={500}
+                  height={300}
+                  className="planta-img"
+                />
+              </div>
+              <div className="planta-content">
+                <p className="planta-descricao">{planta.descricao}</p>
                 <div className="planta-specs">
                   {planta.specs.map((spec, index) => (
-                    <span key={index} className="planta-spec-item">
-                      <i className={spec.icon}></i> {spec.text}
-                    </span>
+                    <div key={index} className="spec-item">
+                      <span className="spec-icon">{spec.icon}</span>
+                      <span className="spec-text">{spec.text}</span>
+                    </div>
                   ))}
                 </div>
-                <p className="planta-descricao">{planta.descricao}</p>
               </div>
             </div>
           ))}
@@ -119,8 +125,9 @@ export default function Plantas() {
             <Image
               src={selectedImage}
               alt="Planta em tamanho maior"
-              width={800}
-              height={600}
+              width={1200}
+              height={800}
+              className="modal-img"
             />
           </div>
         </div>
