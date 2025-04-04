@@ -8,7 +8,7 @@ export default function Diferenciais() {
       <div className="container">
         <div className="separator-large fade-in">
           <span className="separator-line-large"></span>
-          <i className="fas fa-square-full"></i>
+          <span className="separator-diamond">♦</span>
           <span className="separator-line-large"></span>
         </div>
         <h2>Diferenciais Exclusivos</h2>
@@ -24,7 +24,7 @@ export default function Diferenciais() {
               />
             </div>
             <div className="diferencial-content">
-              <h3>Acabamento Premium</h3>
+              <h3>Acabamento<br />Premium</h3>
               <p>Materiais de primeira linha e acabamento refinado em todos os ambientes.</p>
               <ul className="detalhes-lista">
                 <li>Pisos em porcelanato premium</li>
