@@ -54,7 +54,7 @@ export default function Sobre() {
           </div>
           <div className="sobre-image">
             <Image
-              src="/Book Grand Hill Ana Luisa_page-0009.jpg"
+              src="/imagens/Book Grand Hill Ana Luisa_page-0009.jpg"
               alt="Grand Hill - Vista Exterior"
               width={500}
               height={300}

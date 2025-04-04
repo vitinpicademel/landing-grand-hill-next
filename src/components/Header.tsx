@@ -37,7 +37,7 @@ export default function Header() {
     <header className={`header ${isScrolled ? 'scrolled' : ''} ${isTextDark ? 'text-dark' : ''}`}>
       <nav className="nav-container">
         <div className="logo left-logo">
-          <Image src="/07.png" alt="Logo Grand Hill" width={50} height={50} />
+          <Image src="/imagens/07.png" alt="Logo Grand Hill" width={50} height={50} />
         </div>
         <div className="nav-links">
           <Link href="#sobre">Sobre</Link>
@@ -47,7 +47,7 @@ export default function Header() {
           <Link href="#contato">Contato</Link>
         </div>
         <div className="logo right-logo">
-          <Image src="/07.png" alt="Logo Grand Hill" width={50} height={50} />
+          <Image src="/imagens/07.png" alt="Logo Grand Hill" width={50} height={50} />
         </div>
       </nav>
     </header>

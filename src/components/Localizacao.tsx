@@ -15,7 +15,7 @@ export default function Localizacao() {
         <div className="localizacao-content">
           <div className="mapa-container">
             <Image
-              src="/Book Grand Hill Ana Luisa_page-0003.jpg"
+              src="/imagens/Book Grand Hill Ana Luisa_page-0003.jpg"
               alt="Mapa de Localização"
               width={600}
               height={400}

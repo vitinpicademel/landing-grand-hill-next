@@ -15,7 +15,7 @@ export default function Diferenciais() {
         <div className="diferenciais-grid">
           <div className="diferencial-card">
             <Image
-              src="/Book Grand Hill Ana Luisa_page-0023.jpg"
+              src="/imagens/Book Grand Hill Ana Luisa_page-0023.jpg"
               alt="Acabamento Premium"
               width={300}
               height={200}
@@ -31,7 +31,7 @@ export default function Diferenciais() {
           </div>
           <div className="diferencial-card">
             <Image
-              src="/Book Grand Hill Ana Luisa_page-0004.jpg"
+              src="/imagens/Book Grand Hill Ana Luisa_page-0004.jpg"
               alt="Segurança 24h"
               width={300}
               height={200}
@@ -47,7 +47,7 @@ export default function Diferenciais() {
           </div>
           <div className="diferencial-card">
             <Image
-              src="/Book Grand Hill Ana Luisa_page-0015.jpg"
+              src="/imagens/Book Grand Hill Ana Luisa_page-0015.jpg"
               alt="Área de Lazer"
               width={300}
               height={200}

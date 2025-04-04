@@ -11,7 +11,7 @@ export default function Plantas() {
       id: 1,
       nome: 'ONE FLAT',
       area: '55,55m²',
-      imagem: '/Book Grand Hill Ana Luisa_page-0033.jpg',
+      imagem: '/imagens/Book Grand Hill Ana Luisa_page-0033.jpg',
       descricao: 'Apartamento com sala e cozinha integradas, área gourmet, dormitório, banheiro e lavanderia.',
       specs: [
         { icon: 'fas fa-bed', text: '1 Dormitório' },
@@ -24,7 +24,7 @@ export default function Plantas() {
       id: 2,
       nome: 'LOFT',
       area: '82,45m²',
-      imagem: '/Book Grand Hill Ana Luisa_page-0034.jpg',
+      imagem: '/imagens/Book Grand Hill Ana Luisa_page-0034.jpg',
       descricao: 'Apartamento duplex com sala e cozinha integradas, área gourmet, lavanderia, suíte no pavimento superior e pé direito duplo.',
       specs: [
         { icon: 'fas fa-bed', text: '1 Suíte' },
@@ -38,7 +38,7 @@ export default function Plantas() {
       id: 3,
       nome: 'TWO HILL',
       area: '83,84m²',
-      imagem: '/Book Grand Hill Ana Luisa_page-0035.jpg',
+      imagem: '/imagens/Book Grand Hill Ana Luisa_page-0035.jpg',
       descricao: 'Apartamento com sala e cozinha integradas, área gourmet, lavanderia, 1 suíte, 1 dormitório e 2 banheiros, com hall de distribuição.',
       specs: [
         { icon: 'fas fa-bed', text: '1 Suíte + 1 Dormitório' },
@@ -52,7 +52,7 @@ export default function Plantas() {
       id: 4,
       nome: 'TWO LOUNGE',
       area: '83,75m²',
-      imagem: '/Book Grand Hill Ana Luisa_page-0036.jpg',
+      imagem: '/imagens/Book Grand Hill Ana Luisa_page-0036.jpg',
       descricao: 'Apartamento com sala e cozinha integradas, área gourmet, lavanderia, 1 suíte, 1 dormitório e 2 banheiros, com hall de distribuição.',
       specs: [
         { icon: 'fas fa-bed', text: '1 Suíte + 1 Dormitório' },
@@ -66,7 +66,7 @@ export default function Plantas() {
       id: 5,
       nome: 'DUPLEX',
       area: '145,62m²',
-      imagem: '/Book Grand Hill Ana Luisa_page-0038.jpg',
+      imagem: '/imagens/Book Grand Hill Ana Luisa_page-0038.jpg',
       descricao: 'Apartamento duplex com pavimento inferior contendo 1 suíte e 2 dormitórios, copa, lavanderia e 3 banheiros. Pavimento superior com ampla área social, cozinha gourmet e SPA privativo. Pé direito duplo na área social.',
       specs: [
         { icon: 'fas fa-bed', text: '1 Suíte + 2 Dormitórios' },
