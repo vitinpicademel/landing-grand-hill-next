@@ -144,7 +144,7 @@ h1, h2, h3 {
 /* Hero Section */
 .hero-section {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/imagens/principal.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imagens/principal.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -171,61 +171,89 @@ h1, h2, h3 {
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 2rem;
-  background: rgba(0,0,0,0.3);
-  border-radius: 15px;
-  backdrop-filter: blur(5px);
-  max-width: 800px;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-.hero-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+.hero-logo-container {
   margin-bottom: 1rem;
 }
 
 .hero-logo {
-  height: 80px;
-  width: auto;
+  width: 80px;
+  height: auto;
   filter: brightness(0) invert(1);
 }
 
+.hero-title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'Playfair Display', serif;
+}
+
 .hero-subtitle {
-  font-size: 1.5rem;
-  margin: 1rem 0 2rem;
+  font-size: 2rem;
   font-weight: 300;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero-features {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin: 2rem 0;
+  gap: 2.5rem;
+  margin: 1rem 0;
 }
 
 .feature {
-  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.feature-icon {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.feature span {
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .btn {
   padding: 1rem 2rem;
-  border-radius: 8px;
+  border-radius: 50px;
+  font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
 }
 
 .btn-primary {
@@ -235,6 +263,7 @@ h1, h2, h3 {
 
 .btn-primary:hover {
   background: #b39165;
+  transform: translateY(-2px);
 }
 
 .btn-whatsapp {
@@ -244,6 +273,7 @@ h1, h2, h3 {
 
 .btn-whatsapp:hover {
   background: #20bd5a;
+  transform: translateY(-2px);
 }
 
 /* Sobre Section */
