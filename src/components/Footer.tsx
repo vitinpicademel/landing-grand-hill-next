@@ -13,10 +13,10 @@ const Footer = () => {
         </div>
         
         <div className="social-links">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/donnaimob/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/p/Donna-Negociações-Imobiliárias-100089334065194/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a href="https://wa.me/553433361900" target="_blank" rel="noopener noreferrer">
