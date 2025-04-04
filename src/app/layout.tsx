@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Grand Hill - A arte de viver em grande estilo',
-  description: 'Descubra o Grand Hill, um empreendimento exclusivo com conceito de Residência e Resort, localizado às margens da represa Jaguara.',
+  title: 'Grand Hill',
+  description: 'A arte de viver em grande estilo',
 }
 
 export default function RootLayout({
