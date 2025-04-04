@@ -17,6 +17,10 @@ export default function Sobre() {
         <div className="sobre-content">
           <div className="sobre-text">
             <p className="sobre-intro">
+              Projeto arrojado e exclusivo. Todas as unidades com vista para a frente e vista para a Represa de Jaguara. São três opções de plantas, que variam de 55 a 271m².
+            </p>
+            
+            <p className="sobre-descricao">
               Descubra um novo conceito de moradia, onde luxo e conforto se encontram em perfeita harmonia.
             </p>
             
