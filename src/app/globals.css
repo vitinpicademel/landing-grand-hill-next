@@ -1139,4 +1139,50 @@ h1, h2, h3 {
   .separator-large {
     margin: 1.5rem 0;
   }
+}
+
+.separator-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  width: 100%;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.separator-large.fade-in {
+  transition-delay: 0.3s;
+}
+
+.separator-large.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.separator-line-large {
+  height: 2px;
+  width: 250px;
+  background: var(--secondary-color);
+  position: relative;
+}
+
+.separator-large i,
+.separator-diamond {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  margin: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .separator-large {
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .separator-line-large {
+    width: 150px;
+  }
 } 
