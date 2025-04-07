@@ -19,10 +19,24 @@ export default function Localizacao() {
             <Image
               src="/imagens/Book Grand Hill Ana Luisa_page-0003.jpg"
               alt="Localização do Grand Hill"
-              width={600}
-              height={400}
+              width={1200}
+              height={800}
               className="mapa-img"
             />
+            <div className="mapa-overlay">
+              <div className="marker rifaina">
+                <span className="marker-icon">📍</span>
+                <span className="marker-text">RIFAINA-SP</span>
+              </div>
+              <div className="marker ponte">
+                <span className="marker-icon">📍</span>
+                <span className="marker-text">PONTE</span>
+              </div>
+              <div className="marker grand-hill">
+                <span className="marker-icon">📍</span>
+                <span className="marker-text">GRAND HILL</span>
+              </div>
+            </div>
           </div>
           
           <div className="endereco-card">

@@ -777,36 +777,86 @@ h1, h2, h3 {
 }
 
 .localizacao-content {
-  display: flex;
-  gap: 3rem;
-  align-items: flex-start;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .mapa-container {
-  flex: 1;
-  max-width: 600px;
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .mapa-img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  object-fit: cover;
+}
+
+.mapa-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.marker {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(196, 167, 125, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.marker-icon {
+  font-size: 1.2rem;
+}
+
+.marker.rifaina {
+  top: 20%;
+  left: 15%;
+}
+
+.marker.ponte {
+  top: 45%;
+  left: 45%;
+}
+
+.marker.grand-hill {
+  bottom: 30%;
+  left: 60%;
 }
 
 .endereco-card {
-  flex: 0 1 400px;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
   background: white;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
 }
 
 .endereco-card h3 {
   font-size: 1.5rem;
   color: var(--primary-color);
   margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .endereco-card p {
@@ -818,6 +868,37 @@ h1, h2, h3 {
 .endereco-card i {
   color: var(--secondary-color);
   margin-right: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .endereco-card {
+    position: relative;
+    top: -2rem;
+    right: 0;
+    transform: none;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .localizacao-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .marker {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .endereco-card {
+    padding: 1.5rem;
+    top: -1rem;
+  }
+
+  .endereco-card h3 {
+    font-size: 1.3rem;
+  }
 }
 
 /* Contato Section */
