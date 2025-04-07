@@ -1200,6 +1200,11 @@ h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 
+.intro-text .separator {
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
 .text-destaque {
   font-size: 3rem;
   color: var(--primary-color);
@@ -1229,5 +1234,9 @@ h1, h2, h3 {
     br {
       display: none;
     }
+  }
+
+  .intro-text .separator {
+    max-width: 300px;
   }
 } 

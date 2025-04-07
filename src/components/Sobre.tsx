@@ -27,6 +27,11 @@ export default function Sobre() {
         >
           <h3 className="text-intro">Apartamentos de 55m² a 145m²</h3>
           <h3 className="text-intro">com 1 a 3 suítes</h3>
+          <div className="separator">
+            <span className="line"></span>
+            <span className="diamond">♦</span>
+            <span className="line"></span>
+          </div>
           <h2 className="text-destaque">Seu refúgio às margens<br />da represa Jaguara</h2>
           <p className="text-descricao">
             GRAND HILL, nome inspirado nas grandes colinas da nossa região.<br />
