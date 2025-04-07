@@ -19,8 +19,8 @@ export default function Localizacao() {
             <Image
               src="/imagens/Book Grand Hill Ana Luisa_page-0003.jpg"
               alt="Localização do Grand Hill"
-              width={1200}
-              height={800}
+              width={800}
+              height={500}
               className="mapa-img"
             />
             <div className="mapa-overlay">
@@ -36,6 +36,11 @@ export default function Localizacao() {
                 <span className="marker-icon">📍</span>
                 <span className="marker-text">GRAND HILL</span>
               </div>
+            </div>
+            <div className="mapa-description">
+              <p>
+                Localizado às margens da represa Jaguara, próximo à ponte do Rio Grande, que faz divisa entre os estados de São Paulo e Minas Gerais, está inserido na área de turismo e lazer, e possui vista para o município de Rifaina-SP.
+              </p>
             </div>
           </div>
           

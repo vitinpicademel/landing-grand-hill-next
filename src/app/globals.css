@@ -783,16 +783,19 @@ h1, h2, h3 {
 .localizacao-content {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  gap: 2rem;
 }
 
 .mapa-container {
   position: relative;
-  width: 100%;
+  flex: 1;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 
 .mapa-img {
@@ -800,6 +803,7 @@ h1, h2, h3 {
   height: auto;
   display: block;
   object-fit: cover;
+  border-radius: 20px 20px 0 0;
 }
 
 .mapa-overlay {
@@ -843,17 +847,26 @@ h1, h2, h3 {
   left: 60%;
 }
 
+.mapa-description {
+  padding: 1.5rem;
+  background: rgba(196, 167, 125, 0.2);
+  border-radius: 0 0 20px 20px;
+}
+
+.mapa-description p {
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
 .endereco-card {
-  position: absolute;
-  top: 50%;
-  right: 2rem;
-  transform: translateY(-50%);
   background: white;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
+  width: 400px;
+  align-self: flex-start;
 }
 
 .endereco-card h3 {
@@ -875,12 +888,13 @@ h1, h2, h3 {
 }
 
 @media (max-width: 992px) {
+  .localizacao-content {
+    flex-direction: column;
+  }
+
   .endereco-card {
-    position: relative;
-    top: -2rem;
-    right: 0;
-    transform: none;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 2rem;
   }
 }
 
@@ -897,11 +911,18 @@ h1, h2, h3 {
 
   .endereco-card {
     padding: 1.5rem;
-    top: -1rem;
   }
 
   .endereco-card h3 {
     font-size: 1.3rem;
+  }
+
+  .mapa-description {
+    padding: 1rem;
+  }
+
+  .mapa-description p {
+    font-size: 0.8rem;
   }
 }
 
