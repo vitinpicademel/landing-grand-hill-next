@@ -1185,4 +1185,49 @@ h1, h2, h3 {
   .separator-line-large {
     width: 150px;
   }
+}
+
+/* Intro Text Styles */
+.intro-text {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.text-intro {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.text-destaque {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin: 2rem 0;
+  line-height: 1.2;
+  font-family: 'Playfair Display', serif;
+}
+
+.text-descricao {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .text-intro {
+    font-size: 1.5rem;
+  }
+
+  .text-destaque {
+    font-size: 2rem;
+  }
+
+  .text-descricao {
+    font-size: 1rem;
+    br {
+      display: none;
+    }
+  }
 } 
