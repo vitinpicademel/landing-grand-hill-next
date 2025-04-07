@@ -144,7 +144,7 @@ h1, h2, h3 {
 /* Hero Section */
 .hero-section {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imagens/Book Grand Hill Ana Luisa_page-0002.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imagens/principal.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
