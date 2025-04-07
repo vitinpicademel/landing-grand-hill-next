@@ -309,8 +309,12 @@ h1, h2, h3 {
   text-align: center;
   font-size: 3.5rem;
   color: var(--primary-color);
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   font-family: 'Playfair Display', serif;
+}
+
+.sobre-section .separator {
+  margin-bottom: 2rem;
 }
 
 .sobre-content {
@@ -442,8 +446,12 @@ h1, h2, h3 {
   text-align: center;
   font-size: 3.5rem;
   color: var(--primary-color);
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   font-family: 'Playfair Display', serif;
+}
+
+.diferenciais-section .separator {
+  margin-bottom: 2rem;
 }
 
 .diferenciais-grid {
@@ -578,7 +586,11 @@ h1, h2, h3 {
   text-align: center;
   font-size: 2.5rem;
   color: var(--primary-color);
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+
+.plantas-section .separator {
+  margin-bottom: 2rem;
 }
 
 .plantas-grid {
@@ -773,11 +785,11 @@ h1, h2, h3 {
   text-align: center;
   font-size: 2.5rem;
   color: var(--primary-color);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .localizacao-section .separator {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .localizacao-content {
