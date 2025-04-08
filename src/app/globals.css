@@ -1405,4 +1405,57 @@ h1, h2, h3 {
   .intro-text .separator {
     max-width: 300px;
   }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    background: none;
+    backdrop-filter: none;
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .feature {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .right-logo {
+    display: none;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  .left-logo {
+    padding: 0;
+  }
+
+  .left-logo img {
+    width: 40px;
+    height: 40px;
+  }
 } 
