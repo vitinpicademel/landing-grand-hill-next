@@ -849,7 +849,7 @@ h1, h2, h3 {
   height: auto;
   display: block;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
 }
 
 .mapa-overlay {
@@ -950,25 +950,12 @@ h1, h2, h3 {
     margin-bottom: 2rem;
   }
 
-  .marker {
-    padding: 0.3rem 0.8rem;
-    font-size: 0.8rem;
-  }
-
   .endereco-card {
     padding: 1.5rem;
   }
 
   .endereco-card h3 {
     font-size: 1.3rem;
-  }
-
-  .mapa-description {
-    padding: 1rem;
-  }
-
-  .mapa-description p {
-    font-size: 0.8rem;
   }
 }
 
