@@ -79,7 +79,7 @@ export default function Hero() {
           <a href="#sobre" className="btn btn-primary">
             Sobre o Grand Hill
           </a>
-          <a href="https://wa.me/553433361900" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+          <a href="https://wa.me/553433339576" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
             <span>Fale com um Especialista</span>
           </a>
         </motion.div>

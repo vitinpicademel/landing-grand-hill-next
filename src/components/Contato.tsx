@@ -35,7 +35,7 @@ const Contato = () => {
           </div>
         </div>
 
-        <a href="https://wa.me/553433361900" target="_blank" rel="noopener noreferrer" className="whatsapp-button">
+        <a href="https://wa.me/553433339576" target="_blank" rel="noopener noreferrer" className="whatsapp-button">
           Fale com um Especialista
         </a>
       </div>
