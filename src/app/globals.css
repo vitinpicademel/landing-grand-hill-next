@@ -611,7 +611,7 @@ h1, h2, h3 {
 
 /* Plantas Section */
 .plantas-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background-color: var(--elegant-bg);
   position: relative;
 }
@@ -620,18 +620,18 @@ h1, h2, h3 {
   text-align: center;
   font-size: 2.5rem;
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .plantas-section .separator {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .plantas-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .plantas-grid > div:last-child {
