@@ -328,7 +328,7 @@ h1, h2, h3 {
 
 /* Sobre Section */
 .sobre-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background-color: var(--elegant-bg);
   position: relative;
 }
@@ -418,7 +418,7 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .line {
@@ -471,7 +471,7 @@ h1, h2, h3 {
 
 /* Diferenciais Section */
 .diferenciais-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background-color: var(--elegant-bg);
   position: relative;
 }
@@ -492,8 +492,8 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .diferencial-card {
@@ -570,7 +570,7 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .bottom-separator {
@@ -632,6 +632,7 @@ h1, h2, h3 {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .plantas-grid > div:last-child {
@@ -810,7 +811,7 @@ h1, h2, h3 {
 
 /* Localização Section */
 .localizacao-section {
-  padding: 6rem 0;
+  padding: 2rem 0;
   background-color: var(--elegant-bg);
   position: relative;
 }
@@ -833,6 +834,7 @@ h1, h2, h3 {
   margin: 0 auto;
   display: flex;
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 .mapa-container {
@@ -967,7 +969,7 @@ h1, h2, h3 {
 
 /* Contato Section */
 .contato-section {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: #1a1a1a;
   color: #ffffff;
   text-align: center;
@@ -985,6 +987,7 @@ h1, h2, h3 {
   padding: 2rem;
   background-color: rgba(40, 40, 40, 0.8);
   border-radius: 10px;
+  margin-top: 1rem;
 }
 
 .contato-container h3 {
