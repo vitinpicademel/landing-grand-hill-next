@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Grand Hill - Loteamento de Alto Padrão',
-  description: 'Loteamento de Alto Padrão em Rifaina-SP',
+  title: 'Grand Hill - Empreendimento de Alto Padrão',
+  description: 'Empreendimento de Alto Padrão em Rifaina-SP',
 }
 
 export default function RootLayout({

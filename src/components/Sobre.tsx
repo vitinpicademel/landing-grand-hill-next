@@ -64,10 +64,10 @@ export default function Sobre() {
             
             <ul className="sobre-lista">
               <li>
-                <span className="check">✓</span> Torre única com 20 andares
+                <span className="check">✓</span> 2 torres, com mais de 30 andares
               </li>
               <li>
-                <span className="check">✓</span> 2 apartamentos por andar
+                <span className="check">✓</span> mais de 5 aptos por andar
               </li>
               <li>
                 <span className="check">✓</span> Elevadores privativos
