@@ -53,10 +53,7 @@ export default function Header() {
           <Link href="#sobre" onClick={toggleMenu}>Sobre</Link>
           <Link href="#diferenciais" onClick={toggleMenu}>Diferenciais</Link>
           <Link href="#plantas" onClick={toggleMenu}>Plantas</Link>
-<<<<<<< HEAD
           <Link href="#precos" onClick={toggleMenu}>Preços</Link>
-=======
->>>>>>> 66e52cf0f7d817d34a5b4b1659960abafa7862d6
           <Link href="#localizacao" onClick={toggleMenu}>Localização</Link>
           <Link href="#contato" onClick={toggleMenu}>Contato</Link>
         </div>
