@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRulerCombined, faBed, faCar } from '@fortawesome/free-solid-svg-icons';
+import { faRulerCombined, faUmbrellaBeach, faGem } from '@fortawesome/free-solid-svg-icons';
 
 export default function Hero() {
   const [ref, inView] = useInView({
@@ -59,15 +59,15 @@ export default function Hero() {
         >
           <div className="feature">
             <FontAwesomeIcon icon={faRulerCombined} className="feature-icon" />
-            <span>Área Total: 150m²</span>
+            <span>Área Total: 50.000M²</span>
           </div>
           <div className="feature">
-            <FontAwesomeIcon icon={faBed} className="feature-icon" />
-            <span>3 Suítes</span>
+            <FontAwesomeIcon icon={faUmbrellaBeach} className="feature-icon" />
+            <span>Beach Club</span>
           </div>
           <div className="feature">
-            <FontAwesomeIcon icon={faCar} className="feature-icon" />
-            <span>2 Vagas</span>
+            <FontAwesomeIcon icon={faGem} className="feature-icon" />
+            <span>Alto Luxo</span>
           </div>
         </motion.div>
         
