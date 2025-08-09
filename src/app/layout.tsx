@@ -24,7 +24,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || 'GTM-XXXXXXX'} />
+        <GoogleTagManager gtmId="GTM-NN6WXLBV" />
         {children}
       </body>
     </html>
