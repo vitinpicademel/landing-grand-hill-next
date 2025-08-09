@@ -1,12 +1,41 @@
 'use client'
 
 import Script from 'next/script'
+import { useEffect } from 'react'
+
+// Declaração do dataLayer para TypeScript
+declare global {
+  interface Window {
+    dataLayer: any[]
+  }
+}
 
 interface GoogleTagManagerProps {
   gtmId: string
 }
 
 export default function GoogleTagManager({ gtmId }: GoogleTagManagerProps) {
+  useEffect(() => {
+    // Debug: verificar se o GTM está carregando
+    console.log('GTM ID:', gtmId)
+    
+    // Verificar se dataLayer existe
+    if (typeof window !== 'undefined') {
+      window.dataLayer = window.dataLayer || []
+      console.log('DataLayer inicializado:', window.dataLayer)
+      
+      // Aguardar um pouco e verificar se o GTM carregou
+      setTimeout(() => {
+        console.log('DataLayer após carregamento:', window.dataLayer)
+        if (window.dataLayer.length > 0) {
+          console.log('GTM carregado com sucesso!')
+        } else {
+          console.log('GTM pode não ter carregado ainda')
+        }
+      }, 2000)
+    }
+  }, [gtmId])
+
   return (
     <>
       <Script
@@ -20,6 +49,12 @@ export default function GoogleTagManager({ gtmId }: GoogleTagManagerProps) {
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','${gtmId}');
           `,
+        }}
+        onLoad={() => {
+          console.log('GTM Script carregado')
+        }}
+        onError={(e) => {
+          console.error('Erro ao carregar GTM:', e)
         }}
       />
       <noscript>
