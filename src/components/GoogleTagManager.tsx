@@ -38,6 +38,7 @@ export default function GoogleTagManager({ gtmId }: GoogleTagManagerProps) {
 
   return (
     <>
+      {/* GTM Script - versão mais robusta */}
       <Script
         id="gtm-script"
         strategy="afterInteractive"
@@ -57,14 +58,32 @@ export default function GoogleTagManager({ gtmId }: GoogleTagManagerProps) {
           console.error('Erro ao carregar GTM:', e)
         }}
       />
+      
+      {/* GTM noscript - versão mais robusta */}
       <noscript>
         <iframe
           src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
           height="0"
           width="0"
           style={{ display: 'none', visibility: 'hidden' }}
+          title="Google Tag Manager"
         />
       </noscript>
+      
+      {/* Script adicional para garantir carregamento */}
+      <Script
+        id="gtm-dataLayer-init"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'gtm.start': new Date().getTime(),
+              event: 'gtm.js'
+            });
+          `,
+        }}
+      />
     </>
   )
 } 
