@@ -19,7 +19,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/p/Donna-Negociações-Imobiliárias-100089334065194/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="https://wa.me/553433339576?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Grand%20Hill%20[002]" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/553497711600?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Grand%20Hill%20[002]" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
         </div>

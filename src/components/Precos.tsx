@@ -102,7 +102,7 @@ export default function Precos() {
               
               <div className="preco-footer">
                 <a 
-                  href={`https://wa.me/553433339576?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20${planta.nome}%20do%20Grand%20Hill%20[003]`}
+                  href={`https://wa.me/553497711600?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20${planta.nome}%20do%20Grand%20Hill%20[003]`}
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn-consultar"
@@ -135,7 +135,7 @@ export default function Precos() {
             <h3>Lembre-se</h3>
             <p>Esta é a <strong>última semana</strong> com estes valores especiais. Após este período, os preços voltarão ao valor original.</p>
             <a 
-              href="https://wa.me/553433339576?text=Olá,%20gostaria%20de%20agendar%20uma%20visita%20ao%20Grand%20Hill%20[004]"
+              href="https://wa.me/553497711600?text=Olá,%20gostaria%20de%20agendar%20uma%20visita%20ao%20Grand%20Hill%20[004]"
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-agendar"
